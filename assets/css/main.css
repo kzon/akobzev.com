@@ -6,11 +6,13 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  padding: 8vw 20vw; }
+  padding: 0;
+  margin: 0; }
 
 .abbr {
-  font-feature-settings: 'c2sc' 1, 'kern' 1;
-  letter-spacing: .03em;
-  font-kerning: normal; }
+  letter-spacing: .03em; }
+
+.row {
+  padding: 0 20vw; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,10 @@
 .main-banner {
-  margin-bottom: 4vw;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 60px auto 70px; }
   .main-banner__title-container {
     grid-row: 2;
-    margin-left: 2em; }
+    margin-left: 40px; }
   .main-banner__title {
     color: var(--secondary);
     font-size: 3em;

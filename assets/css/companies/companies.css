@@ -1,6 +1,8 @@
 .companies {
+  margin-top: 80px;
   border-radius: 10px;
-  border: 1px solid #e8e8e8; }
+  border: 1px solid #e8e8e8;
+  background: #ffffff; }
   .companies__row {
     display: grid;
     grid-template-columns: repeat(5, 1fr); }
