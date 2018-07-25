@@ -1,0 +1,44 @@
+.social {
+    padding: 4em 2em 5em 2em;
+    &__item {
+        color: #6d6d6d;
+        text-decoration: none;
+        display: inline-block;
+        width: 210px;
+        margin-right: 20px;
+        position: relative;
+        text-align: left;
+        border-radius: 4px;
+        transition: background .2s;
+
+        .icon {
+            margin-right: 3px;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover, &:focus {
+            background: #f5f5f5;
+        }
+
+        &:active {
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    &__name {
+        position: absolute;
+        top: 9px;
+        font-size: 0.9em;
+    }
+
+    &_nick {
+        position: absolute;
+        bottom: 13px;
+        font-size: 0.7em;
+        opacity: .7;
+    }
+}

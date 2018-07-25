@@ -1,0 +1,19 @@
+.main-banner {
+  margin-bottom: 4vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 60px auto 70px; }
+  .main-banner__title-container {
+    grid-row: 2;
+    margin-left: 2em; }
+  .main-banner__title {
+    color: var(--secondary);
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.4; }
+  .main-banner__subtitle {
+    line-height: 1.4; }
+  .main-banner__image {
+    grid-column: 2; }
+
+/*# sourceMappingURL=main-banner.css.map */

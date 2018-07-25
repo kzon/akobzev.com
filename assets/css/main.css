@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&subset=cyrillic");
+:root {
+  --primary: #AD3E3E;
+  --secondary: #2EADBE;
+  --gray: #7B7B7B; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 8vw 20vw; }
+
+.abbr {
+  font-feature-settings: 'c2sc' 1, 'kern' 1;
+  letter-spacing: .03em;
+  font-kerning: normal; }
+
+/*# sourceMappingURL=main.css.map */

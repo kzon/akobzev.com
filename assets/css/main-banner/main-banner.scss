@@ -1,0 +1,26 @@
+.main-banner {
+    margin-bottom: 4vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 60px auto 70px;
+
+    &__title-container {
+        grid-row: 2;
+        margin-left: 2em;
+    }
+
+    &__title {
+        color: var(--secondary);
+        font-size: 3em;
+        font-weight: bold;
+        line-height: 1.4;
+    }
+
+    &__subtitle {
+        line-height: 1.4;
+    }
+
+    &__image {
+        grid-column: 2;
+    }
+}

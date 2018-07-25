@@ -1,0 +1,28 @@
+.companies {
+  border-radius: 10px;
+  border: 1px solid #e8e8e8; }
+  .companies__row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+  .companies__logo_col-1 {
+    grid-column: span 1; }
+  .companies__logo_col-2 {
+    grid-column: span 2; }
+  .companies__logo {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #e8e8e8;
+    border-right: none; }
+    .companies__logo:first-child {
+      border-left: none; }
+    .companies__row:not(:last-child) .companies__logo {
+      border-top: none; }
+    .companies__row:last-child .companies__logo {
+      border-bottom: none; }
+    .companies__logo img {
+      width: 100%;
+      padding: 40px 70px;
+      box-sizing: border-box; }
+
+/*# sourceMappingURL=companies.css.map */

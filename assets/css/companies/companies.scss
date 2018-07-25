@@ -1,0 +1,43 @@
+.companies {
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__logo_col-1 {
+        grid-column: span 1;
+    }
+
+    &__logo_col-2 {
+        grid-column: span 2;
+    }
+
+    &__logo {
+        display: grid;
+        align-items: center;
+        height: 100%;
+        border: 1px solid #e8e8e8;
+        border-right: none;
+
+        &:first-child {
+            border-left: none;
+        }
+
+        .companies__row:not(:last-child) & {
+            border-top: none;
+        }
+
+        .companies__row:last-child & {
+            border-bottom: none;
+        }
+
+        img {
+            width: 100%;
+            padding: 40px 70px;
+            box-sizing: border-box;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ "/assets/css/social/social.css" | relative_url }}">
+<div class="social">
+    {%- if site.social_vk -%}
+        <a href="https://vk.com/{{ site.social_vk | escape }}" class="social__item" target="_blank">
+            <div data-icon="ei-sc-vk" data-size="m"></div>
+            <span class="social__name">ВКонтакте</span>
+            <span class="social_nick">{{ site.social_vk }}</span>
+        </a>
+    {%- endif -%}
+    {%- if site.social_github -%}
+        <a href="https://github.com/{{ site.social_github | escape }}" class="social__item" target="_blank">
+            <div data-icon="ei-sc-github" data-size="m"></div>
+            <span class="social__name">ГитХаб</span>
+            <span class="social_nick">{{ site.social_github }}</span>
+        </a>
+    {%- endif -%}
+    {%- if site.email -%}
+        <a href="mailto:{{ site.email | escape }}" class="social__item" target="_blank">
+            <div data-icon="ei-envelope" data-size="m"></div>
+            <span class="social__name">Эл. почта</span>
+            <span class="social_nick">{{ site.email }}</span>
+        </a>
+    {%- endif -%}
+</div>
