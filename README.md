@@ -1,2 +1,1 @@
-# akobzev.ru
-My personal homepage
+Мой персональный сайт http://akobzev.ru
