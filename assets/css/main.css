@@ -83,8 +83,7 @@
       padding: 40px 70px;
       box-sizing: border-box; }
   .companies__yourcharter img {
-    position: relative;
-    bottom: 9px; }
+    margin-bottom: 9px; }
   .companies__getjet img {
     padding-right: 95px;
     padding-left: 95px; }
@@ -122,7 +121,7 @@
           max-height: 80%;
           width: auto; }
       .companies__yourcharter img {
-        bottom: .7vw; }
+        margin-bottom: .7vw; }
       .companies__podorojnik img {
         padding: 0; }
       .companies__alumet img {
