@@ -1,3 +1,5 @@
+@import "../vars";
+
 .social {
     margin-left: 36px;
     &__item {
@@ -40,5 +42,9 @@
         bottom: 13px;
         font-size: 0.7em;
         opacity: .7;
+    }
+
+    @media (max-width: $small-device) {
+        margin-left: 0;
     }
 }

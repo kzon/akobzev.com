@@ -1,15 +1,15 @@
+@import "../vars";
+
 .main-banner {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 60px auto 70px;
+    margin-top: 60px;
+    margin-bottom: 70px;
 
     &__title-container {
-        grid-row: 2;
         margin-left: 40px;
     }
 
     &__title {
-        color: var(--secondary);
+        color: $secondary;
         font-size: 3em;
         font-weight: bold;
         line-height: 1.4;
@@ -19,7 +19,15 @@
         line-height: 1.4;
     }
 
-    &__image {
-        grid-column: 2;
+    @media (max-width: $medium-device) and (min-width: $small-device) {
+        margin-bottom: 45px;
+    }
+
+    @media (max-width: $small-device) {
+        margin-bottom: 40px;
+
+        &__title-container {
+            margin-left: 0;
+        }
     }
 }

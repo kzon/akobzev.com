@@ -28,18 +28,101 @@
             border-left: none;
         }
 
-        .companies__row:not(:last-child) & {
-            border-top: none;
-        }
-
         .companies__row:last-child & {
             border-bottom: none;
+        }
+
+        .companies__row:not(:last-child) & {
+            border-top: none;
         }
 
         img {
             width: 100%;
             padding: 40px 70px;
             box-sizing: border-box;
+        }
+    }
+
+    &__yourcharter img {
+        position: relative;
+        bottom: 9px;
+    }
+
+    &__getjet img {
+        padding-right: 95px;
+        padding-left: 95px;
+    }
+
+    &__podorojnik img {
+        padding: 35px;
+    }
+
+    &__aviacenterservice img {
+        padding: 50px;
+    }
+
+    @media (max-width: $medium-device) and (min-width: $small-device) {
+        margin-top: 70px;
+
+        &__logo img {
+            padding: 0 40px;
+        }
+
+        &__getjet img {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        &__podorojnik img {
+            padding: 25px;
+        }
+
+        &__aviacenterservice img {
+            padding: 25px;
+        }
+    }
+
+    @media (max-width: $small-device) {
+        margin-top: 50px;
+
+        &__row {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__logo_col-1 {
+            grid-column: span 2;
+        }
+
+        &__logo {
+            height: 20vw;
+            border-left: none;
+
+            .companies__row:not(:first-child) &:first-child {
+                border-top: none;
+            }
+
+            img {
+                margin: auto;
+                padding: 1vw;
+                max-height: 80%;
+                width: auto;
+            }
+        }
+
+        &__yourcharter img {
+            bottom: .7vw;
+        }
+
+        &__podorojnik img {
+            padding: 0;
+        }
+
+        &__alumet img {
+            padding: 3vw;
+        }
+
+        &__vladey img {
+            padding: 4vw;
         }
     }
 }

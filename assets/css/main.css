@@ -1,18 +1,149 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&subset=cyrillic");
-:root {
-  --primary: #AD3E3E;
-  --secondary: #2EADBE;
-  --gray: #7B7B7B; }
+.main-banner {
+  margin-top: 60px;
+  margin-bottom: 70px; }
+  .main-banner__title-container {
+    margin-left: 40px; }
+  .main-banner__title {
+    color: #2EADBE;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.4; }
+  .main-banner__subtitle {
+    line-height: 1.4; }
+  @media (max-width: 920px) and (min-width: 640px) {
+    .main-banner {
+      margin-bottom: 45px; } }
+  @media (max-width: 640px) {
+    .main-banner {
+      margin-bottom: 40px; }
+      .main-banner__title-container {
+        margin-left: 0; } }
+
+.social {
+  margin-left: 36px; }
+  .social__item {
+    color: #6d6d6d;
+    text-decoration: none;
+    display: inline-block;
+    width: 210px;
+    margin-right: 20px;
+    position: relative;
+    text-align: left;
+    border-radius: 4px;
+    transition: background .2s; }
+    .social__item .icon {
+      margin-right: 3px; }
+    .social__item:first-child {
+      margin-left: 0; }
+    .social__item:hover, .social__item:focus {
+      background: #f5f5f5; }
+    .social__item:active {
+      position: relative;
+      top: 1px; }
+  .social__name {
+    position: absolute;
+    top: 9px;
+    font-size: 0.9em; }
+  .social_nick {
+    position: absolute;
+    bottom: 13px;
+    font-size: 0.7em;
+    opacity: .7; }
+  @media (max-width: 640px) {
+    .social {
+      margin-left: 0; } }
+
+.companies {
+  margin-top: 80px;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff; }
+  .companies__row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+  .companies__logo_col-1 {
+    grid-column: span 1; }
+  .companies__logo_col-2 {
+    grid-column: span 2; }
+  .companies__logo {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #e8e8e8;
+    border-right: none; }
+    .companies__logo:first-child {
+      border-left: none; }
+    .companies__row:last-child .companies__logo {
+      border-bottom: none; }
+    .companies__row:not(:last-child) .companies__logo {
+      border-top: none; }
+    .companies__logo img {
+      width: 100%;
+      padding: 40px 70px;
+      box-sizing: border-box; }
+  .companies__yourcharter img {
+    position: relative;
+    bottom: 9px; }
+  .companies__getjet img {
+    padding-right: 95px;
+    padding-left: 95px; }
+  .companies__podorojnik img {
+    padding: 35px; }
+  .companies__aviacenterservice img {
+    padding: 50px; }
+  @media (max-width: 920px) and (min-width: 640px) {
+    .companies {
+      margin-top: 70px; }
+      .companies__logo img {
+        padding: 0 40px; }
+      .companies__getjet img {
+        padding-right: 50px;
+        padding-left: 50px; }
+      .companies__podorojnik img {
+        padding: 25px; }
+      .companies__aviacenterservice img {
+        padding: 25px; } }
+  @media (max-width: 640px) {
+    .companies {
+      margin-top: 50px; }
+      .companies__row {
+        grid-template-columns: 1fr 1fr; }
+      .companies__logo_col-1 {
+        grid-column: span 2; }
+      .companies__logo {
+        height: 20vw;
+        border-left: none; }
+        .companies__row:not(:first-child) .companies__logo:first-child {
+          border-top: none; }
+        .companies__logo img {
+          margin: auto;
+          padding: 1vw;
+          max-height: 80%;
+          width: auto; }
+      .companies__yourcharter img {
+        bottom: .7vw; }
+      .companies__podorojnik img {
+        padding: 0; }
+      .companies__alumet img {
+        padding: 3vw; }
+      .companies__vladey img {
+        padding: 4vw; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
   padding: 0;
-  margin: 0; }
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 880px; }
+  @media (max-width: 920px) and (min-width: 640px) {
+    body {
+      width: 600px; } }
+  @media (max-width: 640px) {
+    body {
+      width: 80%; } }
 
 .abbr {
   letter-spacing: .03em; }
-
-.row {
-  padding: 0 20vw; }
 
 /*# sourceMappingURL=main.css.map */
