@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAM;EACF,SAAS,CAAC,QAAQ;EAClB,WAAW,CAAC,QAAQ;EACpB,MAAM,CAAC,QAAQ",
-"sources": ["vars.scss"],
-"names": [],
-"file": "vars.css"
-}

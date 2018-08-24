@@ -1,0 +1,177 @@
+$project-top-gap: 3em;
+$project-first-line-bottom-gap: 1em;
+
+.resume {
+    &__title {
+        color: $secondary;
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: -11px;
+        margin-bottom: 0.5em;
+    }
+
+    &__info-item {
+        position: relative;
+        margin-bottom: 0.6em;
+        padding-left: 1.6em;
+        line-height: 1.6;
+
+        &::before {
+            content: "—";
+            opacity: 0.2;
+            left: 0;
+            position: absolute;
+        }
+    }
+
+    &__skill {
+        $resume-skill-color: #fff6d7;
+        background: $resume-skill-color;
+        border: 3px solid $resume-skill-color;
+        border-radius: 7px;
+    }
+
+    &__portfolio {
+        margin-top: 40px;
+    }
+
+    &__portfolio-header {
+        font-size: 1.4em;
+        margin-bottom: 0.7em;
+    }
+
+    &__project {
+        margin-bottom: 3em;
+        border-top: 1px solid #eaeaea;
+        padding-top: $project-top-gap;
+
+        &_podorojnik {
+            padding-top: calc(3em - 13px);
+        }
+
+        &_yourcharter {
+            padding-top: calc(3em - 13px);
+
+            .resume__project-icon {
+                width: auto;
+                height: 44px;
+                margin-bottom: 16px;
+                margin-right: 16px;
+            }
+        }
+
+        &_getjet {
+            .resume__project-icon {
+                width: 100px;
+                margin-right: 16px;
+            }
+
+            .resume__project-first-line {
+                margin-bottom: calc(#{$project-first-line-bottom-gap} + 10px);
+            }
+        }
+
+        &_vladey {
+            .resume__project-icon {
+                width: 100px;
+                margin-right: 16px;
+            }
+
+            .resume__project-first-line {
+                margin-bottom: calc(#{$project-first-line-bottom-gap} + 13px);
+            }
+        }
+
+        &_taskor {
+            .resume__project-icon {
+                height: 30px;
+            }
+
+            .resume__project-first-line {
+                margin-bottom: calc(#{$project-first-line-bottom-gap} + 12px);
+            }
+        }
+    }
+
+    &__project-first-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: $project-first-line-bottom-gap;
+    }
+
+    &__project-title-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__project-title {
+        font-weight: bold;
+    }
+
+    &__project-icon {
+        display: block;
+        width: 46px;
+        margin-right: 9px;
+    }
+
+    &__project-link {
+        font-size: 0.9em;
+        margin-top: -5px;
+        margin-left: 0.4em;
+
+        .icon {
+            top: 6px;
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            right: 3px;
+
+            &.icon--ei-sc-github {
+                right: 2px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &::after {
+            width: 95%;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__project-links-wrap {
+        margin-top: -10px;
+    }
+
+    &__project-description {
+        margin-bottom: 1em;
+    }
+
+    &__project-stack {
+        font-style: italic;
+    }
+
+    &__project-details {
+        li {
+            margin-bottom: 0.3em;
+        }
+    }
+    @media (max-width: $small-device) {
+        &__title {
+            font-size: 3em;
+        }
+
+        &__project-first-line {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__project-links-wrap {
+            margin-top: 10px;
+        }
+    }
+}

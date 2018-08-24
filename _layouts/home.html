@@ -1,17 +1,28 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
-    <div class="row">
-        {%- include main-banner/main-banner.html -%}
-    </div>
+  {%- include head.html -%}
 
-    <div class="row">
-        {%- include social/social.html -%}
-    </div>
+  <body>
 
-    <div class="row">
-        {%- include companies/companies.html -%}
-    </div>
-</div>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+            <div class="row">
+                {%- include main-banner/main-banner.html -%}
+            </div>
+
+            <div class="row">
+                {%- include social/social.html -%}
+            </div>
+
+            <div class="row">
+                {%- include companies/companies.html -%}
+            </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+
+</html>

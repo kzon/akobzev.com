@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    color: #777;
+
+    @media (max-width: $small-device) {
+        flex-direction: column-reverse;
+    }
+}
