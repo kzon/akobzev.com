@@ -13,6 +13,20 @@
             <span class="social__nick">{{ site.social_github }}</span>
         </a>
     {%- endif -%}
+    {%- if site.social_codepen -%}
+        <a href="https://github.com/{{ site.social_codepen | escape }}" class="social__item" target="_blank">
+            <div class="icon icon_codepen"></div>
+            <span class="social__name">CodePen</span>
+            <span class="social__nick">{{ site.social_codepen }}</span>
+        </a>
+    {%- endif -%}
+    {%- if site.social_codewars -%}
+        <a href="https://github.com/{{ site.social_codewars | escape }}" class="social__item" target="_blank">
+            <div class="icon icon_codewars"></div>
+            <span class="social__name">CodeWars</span>
+            <span class="social__nick">{{ site.social_codewars }}</span>
+        </a>
+    {%- endif -%}
     {%- if site.email -%}
         <a href="mailto:{{ site.email | escape }}" class="social__item" target="_blank">
             <div data-icon="ei-envelope" data-size="m"></div>
