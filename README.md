@@ -1,1 +1,1 @@
-Мой персональный сайт http://akobzev.ru
+My personal website http://akobzev.com
