@@ -8,4 +8,9 @@
     @media (max-width: $small-device) {
         flex-direction: column-reverse;
     }
+
+    // Hide hosting banner
+    & + div a {
+        display: none !important;
+    }
 }
