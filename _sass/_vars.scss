@@ -4,3 +4,11 @@ $gray: #7B7B7B;
 
 $medium-device: 920px;
 $small-device: 640px;
+
+:root {
+    --main-banner-margin: 70px;
+
+    @media (max-width: $small-device) {
+        --main-banner-margin: 40px;
+    }
+}

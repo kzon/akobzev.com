@@ -1,6 +1,6 @@
 .main-banner {
     margin-top: 17vh;
-    margin-bottom: 70px;
+    margin-bottom: var(--main-banner-margin);
 
     &__title-container {
         margin-left: 28px;
@@ -10,7 +10,8 @@
         color: $secondary;
         font-size: 4.5em;
         font-weight: bold;
-        line-height: 1.4;
+        margin-bottom: .2em;
+        line-height: 1;
     }
 
     &__job {
@@ -30,7 +31,11 @@
     }
 
     @media (max-width: $small-device) {
-        margin-bottom: 40px;
+        margin-top: 80px;
+
+        &__title {
+            font-size: 3em;
+        }
 
         &__title-container {
             margin-left: 0;

@@ -2,7 +2,7 @@ $project-top-gap: 3em;
 $project-first-line-bottom-gap: 1em;
 
 .resume {
-    margin-top: 70px;
+    margin-top: var(--main-banner-margin);
 
     &__title {
         color: $secondary;
