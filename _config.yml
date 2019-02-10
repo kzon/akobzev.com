@@ -19,6 +19,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
+
 
 email: anton.cobzew@yandex.ru
 social_vk: antonkobzev
