@@ -1,11 +1,18 @@
 .icon {
-    &_codepen {
-        background-image: "../img/icons/codepen.svg";
-        background-repeat: no-repeat;
-    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    fill: currentColor !important;
 
     &_codewars {
-        background-image: "../img/icons/codewars.svg";
-        background-repeat: no-repeat;
+        background-image: url("/assets/img/icons/codewars.svg");
+    }
+
+    &_roistat {
+        background-image: url("/assets/img/icons/roistat.png");
+        background-size: 29px;
+        top: 0.2em;
+        left: -0.1em;
+        margin-left: 0.1em;
     }
 }

@@ -2,12 +2,18 @@ $project-top-gap: 3em;
 $project-first-line-bottom-gap: 1em;
 
 .resume {
+    margin-top: 70px;
+
     &__title {
         color: $secondary;
         font-size: 3em;
         font-weight: bold;
         margin-top: -11px;
         margin-bottom: 0.5em;
+    }
+
+    &__info {
+        margin-bottom: 7em;
     }
 
     &__info-item {
@@ -25,9 +31,9 @@ $project-first-line-bottom-gap: 1em;
     }
 
     &__skill {
-        $resume-skill-color: #fff6d7;
-        background: $resume-skill-color;
-        border: 3px solid $resume-skill-color;
+        --resume-skill-color: #fff6d7;
+        background: var(--resume-skill-color);
+        border: 3px solid var(--resume-skill-color);
         border-radius: 7px;
     }
 
