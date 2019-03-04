@@ -51,6 +51,14 @@ $project-first-line-bottom-gap: 1em;
         border-top: 1px solid #eaeaea;
         padding-top: $project-top-gap;
 
+        &_roistat {
+            .resume__project-icon {
+                width: 65px;
+                margin-top: -4px;
+                margin-right: 20px;
+            }
+        }
+
         &_podorojnik {
             padding-top: calc(3em - 13px);
         }
