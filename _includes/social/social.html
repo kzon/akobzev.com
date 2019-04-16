@@ -1,11 +1,11 @@
 <div class="social">
-    <!--{%- if site.social_github -%}-->
-        <!--<a href="https://github.com/{{ site.social_github | escape }}" class="social__item social_github" target="_blank">-->
-            <!--<div data-icon="ei-sc-github" data-size="m"></div>-->
-            <!--<span class="social__name">GitHub</span>-->
-            <!--<span class="social__caption">{{ site.social_github }}</span>-->
-        <!--</a>-->
-    <!--{%- endif -%}-->
+    {%- if site.social_github -%}
+        <a href="https://github.com/{{ site.social_github | escape }}" class="social__item social_github" target="_blank">
+            <div data-icon="ei-sc-github" data-size="m"></div>
+            <span class="social__name">GitHub</span>
+            <span class="social__caption">{{ site.social_github }}</span>
+        </a>
+    {%- endif -%}
     {%- if site.social_codewars -%}
         <a href="https://www.codewars.com/users/{{ site.social_codewars | escape }}" class="social__item social_codewars" target="_blank">
             <div class="icon icon_codewars icon--m"></div>
