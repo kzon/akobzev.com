@@ -1,13 +1,12 @@
 .main-banner {
-    margin-top: 17vh;
+    margin-top: 5em;
     margin-bottom: var(--main-banner-margin);
 
     &__title-container {
-        margin-left: 28px;
     }
 
     &__title {
-        color: $secondary;
+        color: #252525;
         font-size: 4em;
         font-weight: bold;
         margin-bottom: .2em;
